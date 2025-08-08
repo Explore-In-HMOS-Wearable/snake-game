@@ -1,0 +1,36 @@
+{
+  "float": [
+    {
+      "name": "page_text_font_size",
+      "value": "50fp"
+    },
+    {
+      "name": "direction_size",
+      "value": "24vp"
+    },
+    {
+      "name": "direction_opacity",
+      "value": "0.25"
+    },
+    {
+      "name": "direction_space",
+      "value": "4vp"
+    },
+    {
+      "name": "gameover_title",
+      "value": "28fp"
+    },
+    {
+      "name": "gameover_score",
+      "value": "20fp"
+    },
+    {
+      "name": "gameover_restart_text",
+      "value": "16fp"
+    },
+    {
+      "name": "gameover_gap",
+      "value": "10vp"
+    }
+  ]
+}
