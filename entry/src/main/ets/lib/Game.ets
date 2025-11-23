@@ -23,8 +23,8 @@ export function createGame(width: number, height: number): GameState {
 
 function spawnFood(snake: Coordinate[], width: number, height: number): Coordinate {
   const food: Coordinate = {
-    x: Math.floor(Math.random() * width),
-    y: Math.floor(Math.random() * height),
+    x: Math.floor(dateRnd() * width),
+    y: Math.floor(dateRnd() * height),
   };
 
   if (collides(snake, food)) {
@@ -116,4 +116,8 @@ export function changeDirection(game: GameState, newDir: Direction): GameState {
     food: game.food,
     isGameOver: game.isGameOver
   }
+}
+
+function dateRnd() {
+  return (Date.now() % 1000) / 1000;
 }
