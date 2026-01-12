@@ -17,14 +17,14 @@ export function createGame(width: number, height: number): GameState {
     snake: [start],
     direction: 'right',
     food: spawnFood([start], width, height),
-    isGameOver: false,
+    isGameOver: false
   };
 }
 
 function spawnFood(snake: Coordinate[], width: number, height: number): Coordinate {
   const food: Coordinate = {
     x: Math.floor(dateRnd() * width),
-    y: Math.floor(dateRnd() * height),
+    y: Math.floor(dateRnd() * height)
   };
 
   if (collides(snake, food)) {
@@ -103,7 +103,7 @@ export function changeDirection(game: GameState, newDir: Direction): GameState {
     'up': 'down',
     'down': 'up',
     'left': 'right',
-    'right': 'left',
+    'right': 'left'
   };
   if (opposite[game.direction] === newDir) {
     return game;

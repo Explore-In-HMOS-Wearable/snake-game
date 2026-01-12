@@ -43,7 +43,7 @@ entry/src/main/ets/
 │       Types.ets
 ├───pages
 │       Index.ets
-└─── 
+└───
 ```
 
 # Constraints and Restrictions

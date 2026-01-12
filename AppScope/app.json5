@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.snake",
+    "bundleName": "com.hmosdemos.wearable.snake_game",
     "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",

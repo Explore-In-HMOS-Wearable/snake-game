@@ -1,8 +1,8 @@
 import { display } from '@kit.ArkUI';
 
-const MaxVP = display.getPrimaryDisplaySync().width / display.getPrimaryDisplaySync().scaledDensity
-const SQUARE_SIZE = MaxVP / Math.sqrt(2);
-const CANVAS_OFFSET = (MaxVP - SQUARE_SIZE) / 2;
+const MAX_VP = display.getPrimaryDisplaySync().width / display.getPrimaryDisplaySync().scaledDensity
+const SQUARE_SIZE = MAX_VP / Math.sqrt(2);
+const CANVAS_OFFSET = (MAX_VP - SQUARE_SIZE) / 2;
 const GRID_SIZE = 11;
 const CELL_SIZE = SQUARE_SIZE / GRID_SIZE;
 
@@ -11,7 +11,7 @@ interface cfg {
   GRID_SIZE: number,
   CANVAS_OFFSET: number,
   SQUARE_SIZE: number,
-  MaxVP: number,
+  MAX_VP: number
 }
 
 export const GAME_CONFIG: cfg = {
@@ -19,5 +19,5 @@ export const GAME_CONFIG: cfg = {
   GRID_SIZE,
   CANVAS_OFFSET,
   SQUARE_SIZE,
-  MaxVP: MaxVP,
+  MAX_VP: MAX_VP
 }

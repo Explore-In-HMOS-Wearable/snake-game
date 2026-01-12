@@ -11,7 +11,7 @@ export struct GameControls {
     RelativeContainer() {
       DirectionButton({
         btnDirection: 'up',
-        icon: $r('app.media.chevronup'),
+        icon: $r('app.media.chevronup')
       })
         .position({ top: 0 })
         .height(GAME_CONFIG.CANVAS_OFFSET)
@@ -20,28 +20,28 @@ export struct GameControls {
 
       DirectionButton({
         btnDirection: 'left',
-        icon: $r('app.media.chevronleft'),
+        icon: $r('app.media.chevronleft')
       })
         .position({ left: 0, top: 0 })
         .width(GAME_CONFIG.CANVAS_OFFSET)
-        .height(GAME_CONFIG.MaxVP)
+        .height(GAME_CONFIG.MAX_VP)
         .onClick(() => this.onDirectionPress('left'))
 
       DirectionButton({
         btnDirection: 'right',
-        icon: $r('app.media.chevronright'),
-      }).position({ left: GAME_CONFIG.MaxVP - GAME_CONFIG.CANVAS_OFFSET })
+        icon: $r('app.media.chevronright')
+      }).position({ left: GAME_CONFIG.MAX_VP - GAME_CONFIG.CANVAS_OFFSET })
         .width(GAME_CONFIG.CANVAS_OFFSET)
-        .height(GAME_CONFIG.MaxVP)
+        .height(GAME_CONFIG.MAX_VP)
         .onClick(() => this.onDirectionPress('right'))
 
       DirectionButton({
         btnDirection: 'down',
-        icon: $r('app.media.chevrondown'),
+        icon: $r('app.media.chevrondown')
       })
         .position({ bottom: 0 })
         .height(GAME_CONFIG.CANVAS_OFFSET)
-        .width(GAME_CONFIG.MaxVP)
+        .width(GAME_CONFIG.MAX_VP)
         .onClick(() => this.onDirectionPress('down'))
     }.height('100%').width('100%')
   }
